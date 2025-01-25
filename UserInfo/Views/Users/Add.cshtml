@@ -1,0 +1,26 @@
+﻿@model UserInfo.Entities.User
+@{
+}
+<h2>Add New User</h2>
+
+<form method="post" action="/Users/Add">
+    <div>
+        <label>Name:</label>
+        <input type="text" name="Name" required />
+    </div>
+    <div>
+        <label>Surname:</label>
+        <input type="text" name="Surname" required />
+    </div>
+    <div>
+        <label>Image URL:</label>
+        <input type="text" name="Image" />
+    </div>
+    <div>
+        <label>Age:</label>
+        <input type="number" name="Age" required />
+    </div>
+    <button type="submit">Add</button>
+</form>
+
+<a href="/Users/Index">Back to List</a>
